@@ -46,14 +46,14 @@ For example:-
 
 ```js
 // import User model at top
-const User = require("./models/user");
+const User = require('./models/user');
 
 // delete route for deleting a user using id
-app.delete("/users", (req, res) => {
-  var userId = "some id from database";
+app.delete('/users', (req, res) => {
+  var userId = 'some id from database';
   User.findByIdAndDelete(id, (err, user) => {
     if (err) return next(err);
-    res.send("user deleted");
+    res.send('user deleted');
   });
 });
 ```
