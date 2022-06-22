@@ -7,4 +7,4 @@ var acticleSchema = new Schema({
   description: String,
 });
 
-module.exports = mongoose.Model('Article', acticleSchema);
+module.exports = mongoose.model('Article', acticleSchema);
